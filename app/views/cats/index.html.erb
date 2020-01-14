@@ -1,5 +1,10 @@
 <ol>
 <%- @cats.each do |cat| %>
-<li> <%= cat %> </li>
+<li>
+  <strong><%= cat.name %>, </strong>
+  <span> <%= cat.age %>, </span>
+  <span> <%= cat.color %>, </span>
+  <span> <%= cat.food %></span>
+</li>
 <%- end %>
 </ol>

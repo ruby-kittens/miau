@@ -1,5 +1,5 @@
 class CatsController < ApplicationController
   def index
-    @cats = ["Carlo", "Merle", "Puppy", "Tarzan", "Mausi"] 
+    @cats = Cat.all 
   end
 end
